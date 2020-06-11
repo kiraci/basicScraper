@@ -1,5 +1,6 @@
-import currencyConverter
-import newsGatherer
+from currencyConverter import Currency
+from newsGatherer import News
+
 
 def printMenu():
     print("""
@@ -12,34 +13,33 @@ def printMenu():
         0- EXIT
         """)
 
-
 print("Welcome To The Program\n")
 
 flag = True
 
-while flag :
+currency = Currency()
+
+while flag:
 
     printMenu()
 
     option = input("\nPlease Select an Option to Convert to TRY: ")
 
-
-    if option == '1' :
-        print("")
+    if option == '1':
+        print("\nUSD/TRY = " + currency.printValue('1'))
     elif option == '2':
-        print("")
+        print("\nEUR/TRY = " + currency.printValue('2'))
     elif option == '3':
-        print("")
+        print("\nGBP/TRY = " + currency.printValue('3'))
     elif option == '4':
-        print("")
+        print("\nGram Altın = " + currency.printValue('4'))
     elif option == '5':
-        print("")
+        print("\nYarım Altın = " + currency.printValue('5'))
     elif option == '6':
-        print("")
+        print("\nCAD/TRY = " + currency.printValue('6'))
     elif option == '0':
         flag = False
     else:
         print("\nPlease Give an Valid Option\n")
 
 print("\nSee You Later...")
-
