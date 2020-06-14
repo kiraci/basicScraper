@@ -13,7 +13,7 @@ def printMenu():
         0- EXIT
         """)
 
-print("Welcome To The Program\n")
+print("Welcome To The Currency Program\n")
 
 flag = True
 
