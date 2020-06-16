@@ -1,7 +1,6 @@
 from currencyConverter import Currency
 from newsGatherer import News
 
-
 def printMenu():
     print("""
         1- USD\n
@@ -15,6 +14,8 @@ def printMenu():
 
 print("Welcome To The Currency Program of the OBA\n")
 
+news = News()
+#news.googleNews("sey")
 
 flag = True
 
@@ -28,16 +29,22 @@ while flag:
 
     if option == '1':
         print("\nUSD/TRY = " + currency.printValue('1'))
+        news.googleNews("Dolar")
     elif option == '2':
         print("\nEUR/TRY = " + currency.printValue('2'))
+        news.googleNews("Euro")
     elif option == '3':
         print("\nGBP/TRY = " + currency.printValue('3'))
+        news.googleNews("Ingiltere Sterlini")
     elif option == '4':
         print("\nGram Altın = " + currency.printValue('4'))
+        news.googleNews("Gram Altın")
     elif option == '5':
         print("\nYarım Altın = " + currency.printValue('5'))
+        news.googleNews("Yarım Altın")
     elif option == '6':
         print("\nCAD/TRY = " + currency.printValue('6'))
+        news.googleNews("Kanada Doları")
     elif option == '0':
         flag = False
     else:
