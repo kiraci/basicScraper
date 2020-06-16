@@ -15,7 +15,6 @@ def printMenu():
 print("Welcome To The Currency Program of the OBA\n")
 
 news = News()
-#news.googleNews("sey")
 
 flag = True
 

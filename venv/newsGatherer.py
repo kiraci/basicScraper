@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 class News :
     def __init__(self):
-        print("News asd")
+        print("")
 
     def googleNews(self,searchedTerm):
         searched = searchedTerm
@@ -19,4 +19,3 @@ class News :
 
         for i in range(0,3):
             print(mydivs[i].text)
-        #print(searchedTerm)
